@@ -9,4 +9,4 @@ WORKDIR /app
 
 EXPOSE 18789
 
-CMD ["sh", "-c", "openclaw gateway start"]
+CMD ["openclaw","gateway","run","--bind","lan","--port","18789","--allow-unconfigured"]
